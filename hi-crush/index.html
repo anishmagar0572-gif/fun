@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Crush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Decorative layers removed per request -->
+    <div class="confetti-layer" id="confettiLayer"></div>
+
+    <div class="control-bar" role="toolbar" aria-label="Audio controls">
+      <button class="music-toggle" id="musicToggle" aria-label="Toggle music">🔊</button>
+      <input id="masterVolume" class="sound-slider" type="range" min="0" max="1" step="0.01" value="0.05" aria-label="Master volume" />
+    </div>
+
+    <main class="stage">
+      <!-- Main romantic proposal card -->
+      <section class="card" id="proposalCard">
+        <div class="intro-panel" id="introPanel">
+          <div class="heart-badge heartbeat">❤️</div>
+          <h1>Hi Crush ❤️</h1>
+          <p class="question">Do you love me?</p>
+          <img class="photo-below-question" src="dog.gif" alt="Cute dog" />
+
+          <div class="button-row">
+            <button class="btn primary" id="yesBtn">💖 Yes</button>
+            <button class="btn secondary" id="noBtn">🥺 No</button>
+          </div>
+        </div>
+
+        <div class="success-panel hidden" id="successPanel">
+          <div class="burst-layer" id="burstLayer"></div>
+
+          <h2>❤️ Yayyyyy!! ❤️</h2>
+          <p class="lead">I knew you would say YES! 🥹💖</p>
+
+          <img class="romantic-image" id="romanticImage" alt="A sweet romantic placeholder" />
+          <img class="dog-gif" src="dog.gif" alt="Cute dog animation" />
+
+          <div class="letter" id="letter" aria-live="polite"></div>
+          <p class="closing">Our Journey Starts Here ❤️</p>
+        </div>
+      </section>
+    </main>
+
+    <audio id="yesAudio" src="kung.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
